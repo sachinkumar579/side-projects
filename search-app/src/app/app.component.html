@@ -1,0 +1,17 @@
+
+
+<div style="display: flex;">
+  <div>
+    <h1>Add keys</h1>
+<div>
+  <textarea [(ngModel)]="bigTextBox" rows="2" cols="50" placeholder="keywords"></textarea>
+</div>
+<div>
+  <textarea [(ngModel)]="biggerTextBox" rows="15" cols="50" placeholder="content"></textarea>
+</div>
+<div>
+  <button (click)="saveData()">Save</button>
+</div>
+  </div>
+  <app-search-form></app-search-form>
+</div>

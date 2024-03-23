@@ -1,0 +1,10 @@
+<div>
+    <textarea [(ngModel)]="textInput" rows="2" cols="50" placeholder="Enter text here" (input)="searchKeywords()"></textarea>
+  </div>
+  <div *ngFor="let match of matchingContent">
+    <div>{{ match.date }}</div>
+    <div *ngFor="let content of match.content">
+      <p>{{ content }}</p>
+    </div>
+  </div>
+  
